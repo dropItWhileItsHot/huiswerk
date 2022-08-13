@@ -1,0 +1,106 @@
+
+    .page_colective_style {
+      width: 100%;
+      height : 200px;
+    }
+
+      #page_header {
+        background-color : #DC143C;
+      }
+      /* row 1 */
+      #zeroZero {
+        background-color : DarkOliveGreen;
+
+        width : 300px;
+      }
+
+      #zeroOne {
+        background-color : Forestgreen;
+        width : 300px;
+      }
+
+      #zeroTwo {
+        background-color : Lawngreen;
+
+        width : 300px;
+      }
+
+      #zeroThree {
+        background-color : YellowGreen;
+
+        width : 300px;
+      }
+
+
+      /* row 2 */
+      #oneZero {
+        background-color : #DC143C;
+        width : 300px;
+      }
+
+
+      #oneOne {
+        background-color : #FA8072;
+        width : 300px;
+      }
+
+      #oneTwo {
+        background-color : #F08080;
+        width : 300px;
+      }
+
+      #oneThree {
+        background-color : #8B0000;
+        width : 300px;
+      }
+
+
+      /* row 3*/
+      #twoZero {
+        background-color : rgb(139,69,19);
+        width : 300px;
+      }
+
+      #twoOne {
+        background-color : rgb(184,134,11);
+        width : 300px;
+      }
+
+      #twoTwo {
+        background-color : rgb(255,250,205);
+        width : 300px;
+      }
+
+      #twoThree {
+        background-color : rgb(245,245,220);
+        width : 300px;
+      }
+
+      /*  row 4 */
+      #threeZero {
+        background-color : teal;
+        width : 300px;
+      }
+
+      #threeOne {
+        background-color : AquaMarine;
+        width : 300px;
+      }
+
+      #threeTwo {
+        background-color : steelBlue;
+        width : 300px;
+      }
+
+      #threeThree {
+        background-color : LightSkyBlue;
+      }
+
+      #page_footer {
+        background-color : LightSkyBlue;
+      }
+
+      .tabel_img {
+        width : 250px;
+        height : auto;
+      }

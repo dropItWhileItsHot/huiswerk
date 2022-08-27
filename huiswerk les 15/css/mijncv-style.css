@@ -1,0 +1,35 @@
+table {
+margin : 10px 10px 10px 10px;
+width : 800px;
+}
+
+table caption {
+	padding : 15px;
+	background-color : steelblue;
+	color : lightblue;
+}
+
+
+table th {
+padding : 5px;
+width: 200px;
+background-color : skyblue;
+color : steelblue;
+}
+
+table .oneven {
+padding : 15px;
+background-color : lightblue;
+color : steelblue;
+}
+
+table .even {
+padding : 15px;
+background-color : skyblue;
+color : steelblue;
+}
+
+table td { 
+text-align : center;
+padding : 15px;
+}

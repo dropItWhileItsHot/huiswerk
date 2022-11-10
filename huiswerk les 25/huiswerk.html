@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Praktijk opdracht les 25</title>
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#vraag_0").click(function(){
+    $("#antwoord_0").slideToggle("slow");
+  });
+
+
+  $("#vraag_1").click(function(){
+    $("#antwoord_1").slideToggle("slow");
+  });
+
+  $("#vraag_2").click(function(){
+    $("#antwoord_2").slideToggle("slow");
+  });
+  
+ 
+    $("#antwoord_1").slideUp("slow");  
+    $("#antwoord_2").slideUp("slow");  
+ 
+});
+</script>
+
+<style>
+.vraag {
+padding : 15px;
+width : 100%;
+border : 1px;
+border-style : solid;
+border-color : blue;
+background-color : black;
+color : white;
+}
+
+.antwoord {
+padding : 15px;
+width : 100%;
+border : 1px;
+border-style : solid;
+border-color : lightblue;
+background-color : snow;
+color : blue;
+}
+
+#faquo {
+width : 600px;
+}
+
+#toelichting {
+padding : 15px;
+width : 100%;
+background-color : snow;
+color : blue;
+border : 1px;
+border-style : solid;
+border-color : blue;
+}
+
+</style>
+</head>
+
+<body>
+<section>
+<article id="faquo">
+<div id="toelichting"> 
+Hier vind u de meest voorkomende veelgestelde vragen. 
+Mocht u nu toch het antwoord niet vinden. of heeft 
+u simpelweg liever menselijk contact. dan kunt u mij 
+gerust mailen op ma, di , wo tussen 9:00 en 18:00
+</div>
+<div id="vraag_0" class="vraag">Is "wat" een vel gestelde ?</div>
+<div id="antwoord_0" class="antwoord">wat ?</div>
+<div id="vraag_1"class="vraag">en dit ook ?</div>
+<div id="antwoord_1"class="antwoord">dit ?</div>
+<div id="vraag_2"class="vraag">en dat dan ?</div>
+<div id="antwoord_2" class="antwoord">dat ?</div>
+
+</article>
+</section>
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<style>
+#sortingList {
+ width : 400px;
+ border : 1px;
+ border-color : blue;
+}
+
+
+</style>
+
+
+<div id="app">
+
+	<input id="barCodeInput" type="text" placeholder="scanBarcode" onchange="compareToList()" />
+
+
+<table id="sortingList">
+
+</table>
+
+</div>
+
+
+<script>
+
+var productenLijst = [];
+productenLijst[0] = ["barCode", "locatie", "aantal"]; // aale productenLijst
+
+
+var locatieCounter = 1;
+
+
+
+
+function compareToList() {
+
+	let matchFound = false;
+	let input= document.getElementById('barCodeInput').value;
+	document.getElementById('barCodeInput').value = '';
+	
+		
+		
+		for(i in productenLijst) {
+			if(input == productenLijst[i][0]) {
+			
+				// we have this product in the list 
+				console.log("product found at index :" + i);
+				matchFound = true;
+				updateListItem(i);
+				break;
+			} else {
+			   // this product is not yet in the list 
+			   // so create a new location and add it	
+			}	
+		}
+		
+		if(matchFound == false) {
+			addProductListItem(input);	   
+		}	   
+		
+		
+	}
+
+
+
+function addProductListItem(input) {
+
+
+let barCode = input;
+let aantal = 1;
+let locatie = locatieCounter;
+
+
+productenLijst.push([barCode, locatie, aantal]);
+
+locatieCounter ++;
+
+	updateSortingList();
+}
+
+
+function updateListItem(index) {
+
+
+
+productenLijst[i][2] ++;
+
+updateSortingList();
+
+}
+
+
+function updateSortingList() {
+
+document.getElementById('sortingList').innerHTML = '';
+
+for(i in productenLijst) {
+
+	document.getElementById('sortingList').innerHTML += "<tr><td>" + productenLijst[i][0] + 
+"</td><td>" + productenLijst[i][1] + "</td><td>" + productenLijst[i][2] + "</td></tr>";
+}
+
+
+}
+
+
+
+
+</script>
